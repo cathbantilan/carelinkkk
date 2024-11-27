@@ -9,7 +9,7 @@ function onClick () {
 </script>
 
 <template>
-    <v-responsive class="border rounded">
+<v-responsive class="border rounded">
     <v-app :theme="theme">
       <v-app-bar class="px-3">
         <v-spacer></v-spacer>
@@ -38,32 +38,21 @@ function onClick () {
 
     <v-card-text class="bg-surface-light pt-4">
       <v-form fast-fail @submit.prevent>
-              <p>ID Number:</p>
-              <v-text-field
-                prepend-inner-icon="mdi-account" 
-                label="Enter your ID number" 
-                color="green"
-                placeholder="ID Number" 
-              ></v-text-field>
-              
-              <p>Password:</p>
-              <v-text-field
-                prepend-inner-icon="mdi-lock" 
-                label="Enter your password" 
-                color="green"
-                placeholder="Password" 
-                type="password"
-              ></v-text-field>
-
-              <v-checkbox
-                label="Remember Me"
-                v-model="rememberMe"
-              ></v-checkbox>
-
-              <v-btn class="rounded-s-lg" type="submit" block color="green-darken-3">Log in</v-btn>
-            </v-form>
-            <v-divider class="my-5"></v-divider>
-              <h5 class="text-center">Don't have an account?<router-link to="/register">Click here to Register</router-link></h5>
+                <v-text-field label="Role (Student/Staff)" variant="outlined"></v-text-field>
+                <v-text-field label="ID Number" variant="outlined"></v-text-field>
+                <v-text-field label="FirstName" variant="outlined"></v-text-field>
+                <v-text-field label="LastName" variant="outlined"></v-text-field>
+                <v-text-field label="Email" variant="outlined"></v-text-field>
+                <v-text-field label="Phone Number" variant="outlined"></v-text-field>
+                <v-text-field label="Password" type="password" variant="outlined"></v-text-field>
+                <v-text-field label="Password Confirmation" type="password" variant="outlined">
+                </v-text-field>
+                <v-btn class="rounded-s-lg mt-2" type="submit" block color="green-darken-3">Register</v-btn>
+              </v-form>
+              <v-divider class="my-5"></v-divider>
+              <h5 class="text-center">
+                Already have an account?<RouterLink to="/login">Click here to Login</RouterLink>
+              </h5>
     </v-card-text>
   </v-card>
 
