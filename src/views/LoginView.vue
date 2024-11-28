@@ -43,7 +43,7 @@ const { mobile } = useDisplay()
               <v-btn class="rounded-s-lg" type="submit" block color="green-darken-3">Log in</v-btn>
             </v-form>
             <v-divider class="my-5"></v-divider>
-              <h5 class="text-center">Don't have an account?<router-link to="/register"> Click here to Register</router-link></h5>
+              <h5 class="text-center">Don't have an account?<router-link to="/register"><b> Click here to Register</b></router-link></h5>
           </v-card-text>
         </v-card>
       </v-col>

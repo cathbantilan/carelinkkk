@@ -25,11 +25,13 @@ import AppLayout from '@/components/layout/AppLayout.vue'
                 <v-text-field label="Password" type="password" variant="outlined"></v-text-field>
                 <v-text-field label="Password Confirmation" type="password" variant="outlined">
                 </v-text-field>
-                <v-btn class="rounded-s-lg mt-2" type="submit" block color="green-darken-3">Register</v-btn>
+                <v-btn class="rounded-s-lg mt-2" type="submit" block color="green-darken-3"
+                  >Register</v-btn
+                >
               </v-form>
               <v-divider class="my-5"></v-divider>
               <h5 class="text-center">
-                Already have an account?<RouterLink to="/login"> Click here to Login</RouterLink>
+                Already have an account?<RouterLink to="/login"><b> Click here to Login</b></RouterLink>
               </h5>
             </v-card-text>
           </v-card>
