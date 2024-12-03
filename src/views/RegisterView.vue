@@ -31,7 +31,7 @@ import AppLayout from '@/components/layout/AppLayout.vue'
               </v-form>
               <v-divider class="my-5"></v-divider>
               <h5 class="text-center">
-                Already have an account?<RouterLink to="/login"><b> Click here to Login</b></RouterLink>
+                Already have an account?<RouterLink to="/"><b> Click here to Login</b></RouterLink>
               </h5>
             </v-card-text>
           </v-card>
