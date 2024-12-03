@@ -1,8 +1,11 @@
 <script setup>
 import AppLayout from '@/components/layout/AppLayout.vue'
 import { useDisplay } from 'vuetify'
+import { ref } from 'vue'
 
+const rememberMe = ref(false) // Define the variable using ref
 const { mobile } = useDisplay()
+
 
 </script>
 
