@@ -11,5 +11,15 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  base: '/', // Add this line to set the base URL for assets in your project
+  base: '/',  // Ensure the correct base URL for assets
+
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['vue', 'vuetify'], // Optimize chunking by creating a separate chunk for vendor libraries
+        },
+      },
+    },
+  },
 })
